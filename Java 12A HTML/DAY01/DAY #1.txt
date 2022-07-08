@@ -1,0 +1,49 @@
+27//6/2022
+
+Trình duyệt đc cấu thành từ HTML - CSS - Javascript
+
+Bước đầu làm tốt trên nền tảng GG chrome
+
+HTML là bộ xương
+CSS là màu sắc
+Javascript là ngôn ngữ lập trình
+
+<!DOCTYPE html> bắt buộc phải có để trình duyệt biết là html
+<html>: thẻ mở
+</html>: thẻ đóng
+thẻ title hiển thị phần nội dung của tab
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">: thêm hình ảnh cho tiêu đề tab
+thay favicon.ico bằng địa chỉ của file ảnh thì tab sẽ hiện ảnh có địa chỉ đã copy
+
+rel : nhận biết dạng của icon
+href: đường dẫn
+type: kiểu dữ liệu của ảnh
+
+có 6 cấp độ tiêu đề h1 --> h6
+các thẻ tiêu đề mang ngữ nghĩa đánh dấu 1 nội dung danh mục nào đó
+**chú ý: mỗi 1 trang html chỉ nên có 1 thẻ h1
+
+thẻ block: chiếm toàn bộ chiều rộng của thẻ và phải xuống dòng
+thẻ inline: lồng nhau trong các dòng
+
+**chú ý: có 1 số thuộc tính chỉ áp dụng cho thẻ block hoặc inline
+
+thẻ <br/> dùng để xuống dòng
+
+thẻ inline: b, i, u, strong
+
+thẻ strong khác thẻ b ở chỗ cũng là thẻ in đậm, nhưng ngữ nghĩa được nhấn mạnh hơn. Thường được dùng để đặt keyword, từ khoá quan trọng trong trang web
+
+"https": giao thức mạng
+"google.com": domain
+
+thẻ a bắt buộc phải có href
+target="_blank" tạo blank tại tab mới nếu k có là reload tại tab luôn
+"title": tạo nội dung cho nhãn
+
+thẻ img gồm -thuộc tính src: link hình ảnh
+            -thuộc tính alt: chú thích hình ảnh 
+li là thẻ phần tử dùng để tạo phần tử trong thẻ danh sách
+ul là thẻ danh sách k có thứ tự
+ol là thẻ danh sách có thứ tự

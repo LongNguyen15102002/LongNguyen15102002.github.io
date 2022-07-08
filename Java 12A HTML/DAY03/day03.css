@@ -1,0 +1,90 @@
+/*External CSS*/
+body, html {
+    background-color: #f4f7fa;
+    color: #464646;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#container{
+    margin: 50px auto 50px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+    padding: 30px;
+    background-color: #ffffff;
+    width: 70%;
+    border-left: #464646 1px solid;
+}
+
+.date-time {
+    margin: 15px 0 15px 0;
+}
+
+.ios {
+    background-color: #e5e5e5;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    color: gray;
+    cursor: pointer;
+    margin-right: 0.4rem;
+    font-size: 25px;
+}
+.tag {
+    color: #808080;
+    background-color: #e5e5e5;
+    border-width: 1px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    padding: 2px 4px;
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin: auto;
+}
+
+hr {
+    height: 0.5px;
+    background-color: #dfdfdf;
+    margin: 30px 0px;
+    border: none;
+}
+
+blockquote {
+    border-left: #ccc 5px solid;
+    padding: 10px 0px 10px 15px;
+}
+
+#parent-box {
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    height: 200px;
+    align-items: center;
+}
+
+.box-item {
+    width: 100px;
+    height: 100px;
+}
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: green;
+}
+

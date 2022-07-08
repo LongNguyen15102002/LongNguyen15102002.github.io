@@ -1,0 +1,11 @@
+&lt tương ứng với dấu "<"
+&gt tương ứng với dấu ">"
+
+thẻ sub để viết chỉ số dưới chữ
+thẻ sup để viết chỉ số trên chữ (số mũ)
+CSS - Casading Style Sheets là 1 ngôn ngữ dùng để quy định cách hiển thị của các thẻ trên html
+
+Có 3 cách để nhúng CSS vào trong html
+- inline style: sử dụng thuộc tính Style
+- internal style: sử dụng thẻ <style>
+- external style: sử dụng thẻ <link>

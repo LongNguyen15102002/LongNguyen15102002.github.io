@@ -1,0 +1,7 @@
+**Thứ tự ưu tiên của CSS từ cao đến thấp như sau: inline -> id -> class -> thẻ.
+
+**Phạm vi tác động giảm dần: inline <- id <- class <- thẻ, tức là với các loại bộ chọn CSS, bộ chọn thẻ có phạm vi tác động rộng nhất là trên toàn bộ trang mà có thẻ đó, sau đó mới đến thẻ có thuộc tính class, v.v.
+
+https://timoday.edu.vn/bai-5-mau-sac-trong-css/ --Các cách sử dụng màu--
+
+https://timoday.edu.vn/tong-hop-cac-bo-chon-trong-css/ --Bộ chọn CSS--
