@@ -1,0 +1,94 @@
+.logo {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#container {
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navigation {
+  width: 100%;
+  height: 60px;
+  background-color: #30598c;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.avatar {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 20px;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.sub-menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px 30px 0px 0px
+}
+
+.sub-menu a:hover {
+  color: red;
+}
+
+.child-menu {
+  position: absolute;
+  padding-top: 30px;
+  display: none;
+  background-color: red;
+}
+
+.child-menu li {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.sub-menu li:hover .child-menu {
+    display: block;
+    text-align: center;
+}

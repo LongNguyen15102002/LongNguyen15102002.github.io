@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navigation-bar {
+    background-color: #013dbf;
+}
