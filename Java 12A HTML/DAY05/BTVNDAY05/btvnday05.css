@@ -139,3 +139,60 @@
     box-shadow: none;
     border-radius: 2px;
  }
+
+ .lazada-cart .cart-icon{
+    position: absolute;
+    background-image: url(//laz-img-cdn.alicdn.com/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png);
+    background-size: cover;
+    width: 29px;
+    height: 26px;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -14px;
+ }
+
+ .lazada-cart .cart {
+    position: absolute;
+    background: #f36e36;
+    color: #fff;
+    top: -4px;
+    font-weight: 400;
+    right: -4px;
+    text-align: center;
+    border: 3px solid #f36e36;
+    font-size: 13px;
+    min-width: 14px;
+    line-height: 14px;
+    border-radius: 50%;
+    display: none;
+ }
+
+ .lazada-cart {
+    display: inline-block;
+    height: 38px;
+    width: 40px;
+    position: relative;
+    margin: 0 0 0 20px;
+ }
+
+ .top-banner {
+    width: 188px;
+    height: 45px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.top-banner a {
+    display: inline;
+}
+
+.header-content .top-banner a img {
+    width: 188px;
+    height: 45px;
+    display: block;
+    margin-top: 37px;
+    background-color: aqua;
+}
+
