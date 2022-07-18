@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class, Pseudo Element</title>
+
+    <style>
+      /*Pseudo Class được dùng để xác định 1 trạng thái đặc biệt nào đó của phần tử*/
+      a:link {
+        color: green;
+      }
+
+      a:hover {
+        color: blue;
+      }
+
+      a:active {
+        color: orange;
+      }
+
+      a:visited {
+        color: red;
+      }
+      /*Pseudo Element được hiểu nôm na là phần tử giả, được dùng để tạo style đặc biệt cho chữ cái đầu tiên, dòng đầu tiên, hoặc nội dung trước và sau của phần tử */
+      p::first-letter {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .paragraph::first-line {
+        text-decoration: underline;
+      }
+
+      .paragraph::selection {
+        background-color: yellow;
+      }
+
+      h1 {
+        position: relative;
+        padding-left: 20px;
+      }
+
+      h1::before {
+        content: "";
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid green;
+        left: 0px;
+        top: 8px;
+        position: absolute;
+      }
+
+      .no2::after {
+        content: " đồng";
+      }
+
+      .dollar::after {
+        content: ' $';
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đây là tiêu đề h1</h1>
+    <a href="#">Google</a>
+    <p>Hoc CSS</p>
+    <p class="paragraph">
+      Chia sẻ với báo chí, cảm xúc khi nhận chức quyền Bộ trưởng Y tế, bà Đào
+      Hồng Lan nói: “Cảm xúc của tôi lúc này vừa mừng vừa lo”. Mừng vì sau khi
+      công tác tại tỉnh Bắc Ninh, đến thời điểm này, được lãnh đạo Đảng, Nhà
+      nước, Chính phủ tin tưởng, điều động, phân công nhiệm vụ về làm Bí thư Ban
+      cán sự và quyền Bộ trưởng Bộ Y tế. Đây là lĩnh vực rất quan trọng trong
+      chính sách an sinh xã hội. “Có thể nói, đây là lúc ngành y tế cần có sự
+      động viên, chia sẻ của lãnh đạo Đảng, Nhà nước, các bộ, ban, ngành và sự
+      đồng cảm của nhân dân để vượt qua những khó khăn, thách thức”, quyền Bộ
+      trưởng Y tế nói. Điều bà mong muốn và sẽ thực hiện khi nắm giữ vai trò
+      người đứng đầu ngành y tế là gì? Tôi không phải xuất phát từ ngành y nên
+      nhiệm vụ này đối với tôi rất mới mẻ. Tuy nhiên, trách nhiệm trước Đảng,
+      trước nhân dân, tôi sẽ thực hiện nghiêm túc sự phân công của Bộ Chính trị.
+      Chúng tôi sẽ cùng Ban cán sự, lãnh đạo Bộ và cán bộ, công nhân viên chức
+      ngành y tế huy động sự tham gia của đội ngũ khoa học, chuyên gia, các thế
+      hệ đi trước để rà soát lại các công việc, lựa chọn những vấn đề then chốt
+      để tập trung tháo gỡ.
+    </p>
+    <p class="no2">10101</p>
+    <p class="dollar">133333</p>
+  </body>
+</html>

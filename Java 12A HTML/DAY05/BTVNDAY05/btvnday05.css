@@ -1,279 +1,373 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #advertisement {
-    background-color: #013bdf;
-    width: 100%;
-    height: 80px;
+  background-color: #013bdf;
+  width: 100%;
+  height: 80px;
 }
 
 .ad-content {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 #navigation {
-    width: 100%;
-    height: 115px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #fff;
+  width: 100%;
+  height: 115px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 .header-content {
-    width: 1188px;
-    margin: 0 auto;
-    min-width: 1188px;
-    display: inline-block;
-    background-color: rgba(0, 0, 0,0.03);
-    height: 25px;
-    position: relative;
+  width: 1188px;
+  margin: 0 auto;
+  min-width: 1188px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.03);
+  height: 25px;
+  position: relative;
 }
 
 .menu-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 25px;
-    text-align: left;
-    white-space: nowrap;
-    position: relative;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
 }
 
 .menu-bar li:hover {
-    color: red;
+  color: red;
 }
 
-.logo-lazada img, input {
-    width: 127px;
-    height: 40px;
-    border-style: none;
-    vertical-align: middle;
-    border: none;
+.logo-lazada img,
+input {
+  width: 127px;
+  height: 40px;
+  border-style: none;
+  vertical-align: middle;
+  border: none;
 }
- .header-content .menu-bar a {
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-transition: color .2s;
-    transition: color .2s;
+.header-content .menu-bar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .logo-bar {
-    height: 75px;
-    width: 100%;
-    background-color: #fff;
-    padding-top: 11px;
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 11px;
 }
 
 .logo-bar .logo-lazada {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 39px;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 39px;
 }
 
 .logo-lazada a {
-    float: left;
+  float: left;
 }
 
 .lazada-search-bar {
-    width: 688px;
-    display: inline-block;
-    height: 45px;
-    line-height: 45px;
-    background-color: #fff;
-    border-radius: 3px;
+  width: 688px;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  background-color: #fff;
+  border-radius: 3px;
 }
 
 .main-search-box {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    height: 45px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
 }
 
 .search-box-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
 }
 
 .search-box-2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45px;
-    line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  line-height: 1;
 }
 
 .search-box-2 .search-box-button {
-    width: 45px;
-    height: 45px;
-    text-indent: -9999px;
-    border: none;
-    border-radius: 0 2px 2px 0;
-    outline: none;
-    background: #f57224 url(https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-search-vector-icon-png-image_696422.jpg) 50% no-repeat;
-    background-size: 22px;
-    box-shadow: none;
-    cursor: pointer;
+  width: 45px;
+  height: 45px;
+  text-indent: -9999px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  outline: none;
+  background: #f57224
+    url(https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-search-vector-icon-png-image_696422.jpg)
+    50% no-repeat;
+  background-size: 22px;
+  box-shadow: none;
+  cursor: pointer;
 }
- .search-box-1 .input1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 13px 19px;
-    font-family: font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0;
-    color: #212121;
-    border: none;
-    outline: none;
-    background: #eff0f5;
-    box-shadow: none;
-    border-radius: 2px;
- }
+.search-box-1 .input1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 13px 19px;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #212121;
+  border: none;
+  outline: none;
+  background: #eff0f5;
+  box-shadow: none;
+  border-radius: 2px;
+}
 
- .lazada-cart .cart-icon{
-    position: absolute;
-    background-image: url(//laz-img-cdn.alicdn.com/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png);
-    background-size: cover;
-    width: 29px;
-    height: 26px;
-    left: 50%;
-    top: 50%;
-    margin: -12px 0 0 -14px;
- }
+.lazada-cart .cart-icon {
+  position: absolute;
+  background-image: url(//laz-img-cdn.alicdn.com/tfs/TB1xEeTdBGw3KVjSZFDXXXWEpXa-75-66.png);
+  background-size: cover;
+  width: 29px;
+  height: 26px;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 -14px;
+}
 
- .lazada-cart .cart {
-    position: absolute;
-    background: #f36e36;
-    color: #fff;
-    top: -4px;
-    font-weight: 400;
-    right: -4px;
-    text-align: center;
-    border: 3px solid #f36e36;
-    font-size: 13px;
-    min-width: 14px;
-    line-height: 14px;
-    border-radius: 50%;
-    display: none;
- }
+.lazada-cart .cart {
+  position: absolute;
+  background: #f36e36;
+  color: #fff;
+  top: -4px;
+  font-weight: 400;
+  right: -4px;
+  text-align: center;
+  border: 3px solid #f36e36;
+  font-size: 13px;
+  min-width: 14px;
+  line-height: 14px;
+  border-radius: 50%;
+  display: none;
+}
 
- .lazada-cart {
-    display: inline-block;
-    height: 38px;
-    width: 40px;
-    position: relative;
-    margin: 0 0 0 20px;
- }
+.lazada-cart {
+  display: inline-block;
+  height: 38px;
+  width: 40px;
+  position: relative;
+  margin: 0 0 0 20px;
+}
 
- .top-banner {
-    width: 188px;
-    height: 45px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
+.top-banner {
+  width: 188px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .top-banner a {
-    display: inline;
+  display: inline;
 }
 
 .top-banner a img {
-    width: 188px;
-    height: 45px;
-    display: block;
-    margin-top: 37px;
-    background-color: #fff;
+  width: 188px;
+  height: 45px;
+  display: block;
+  margin-top: 37px;
+  background-color: #fff;
 }
 
 .item-slider {
-    margin-top: 30px;
-    width: 100%;
-    height: 344px;
-    background-color: #8b0001;
-    display: block;
-    float: left;
-    overflow: hidden;
+  margin-top: 30px;
+  width: 100%;
+  height: 344px;
+  background-color: #8b0001;
+  display: block;
+  float: left;
+  overflow: hidden;
 }
 
 .item-slider .list-and-ads {
-    width: 1188px;
-    height: 100%;
-    background-color: aquamarine;
-    position: relative;
-    margin: auto;
+  width: 1188px;
+  height: 100%;
+  background-color: aquamarine;
+  position: relative;
+  margin: auto;
 }
 
 .item-slider .list-and-ads .list-container {
-    width: 200px;
-    height: 344px;
-    position: absolute;
-    box-shadow: 0 0 2px 0rgba(0,0,0,.25);
-    background-color: #fff;
-    z-index: 200px;
-    visibility: inherit;
-    padding: 0!important;
+  width: 200px;
+  height: 344px;
+  position: absolute;
+  box-shadow: 0 0 2px 0rgba (0, 0, 0, 0.25);
+  background-color: #fff;
+  z-index: 200px;
 }
 
-.list {
-    overflow: hidden;
-    padding: 8px 0 12px 0;
-    height: 100%;
-    margin: 0;
-    list-style: none;
+.list-container {
+  visibility: inherit;
+  padding: 0 !important;
 }
 
-.list-container .list .item-list a{
-    display: block;
-    padding-left: 8px;
-    height: 27px;
-    line-height: 27px;
-    text-decoration: none;
+.item-slider .list-and-ads .list-container .main-list {
+  overflow: hidden;
 }
 
-.list-container .list .item-list a span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    white-space: nowrap;
-    width: 172px;
-    font-size: 13px;
-    line-height: 27px;
-    color: #757575;
-    cursor: pointer;
+.list-container .main-list {
+  padding: 8px 0 12px;
+  list-style: none;
+  height: 100%;
+  margin: 0;
 }
 
+.list-container .main-list .item-lv1 a {
+  display: block;
+  padding-left: 8px;
+  height: 27px;
+  line-height: 27px;
+  text-decoration: none;
+}
 
+.item-lv1 a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 172px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 27px;
+  color: #757575;
+  cursor: pointer;
+}
 
+.item-lv2 {
+  padding: 8px 0 12px;
+  height: 344px;
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  left: 200px;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%);
+}
 
+.item-lv2 .sub-item a {
+  line-height: 27px;
+  display: block;
+  padding-left: 8px;
+  height: 27px;
+  text-decoration: none;
+}
 
+.item-lv2 .sub-item a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 172px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 27px;
+  color: #757575;
+  cursor: pointer;
+}
 
+.main-list .item-lv2 .grand-item {
+  padding: 8px 0 12px;
+  height: 344px;
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  left: 200px;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%);
+}
 
+.main-list .item-lv2 .grand-item a {
+  line-height: 27px;
+  text-decoration: none;
+  display: block;
+  padding-left: 8px;
+  height: 27px;
+}
 
+.main-list .item-lv2 .grand-item a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 172px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 27px;
+  color: #757575;
+  cursor: pointer;
+}
 
+.container-ads {
+  width: 988px;
+  height: 344px;
+  margin-left: 200px;
+}
 
+.container-ads .ads img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.item-lv1 a span:hover .item-lv2 {
+  color: red;
+  visibility: visible;
+}
+
+.hover span:hover {
+  color: red !important;
+}
+
+.hover span:hover .item-lv2 {
+  visibility: visible;
+}

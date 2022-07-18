@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 432px;
+    margin: 200px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.intro {
+    background-color: #fff;
+    margin-top: 0;
+    padding: 30px 30px 10px 30px;
+}
+
+.container .intro {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    width: 432px;
+}
+
+.intro .intro1 {
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+    width: 432px;
+    font-weight: 600;
+    float: left;
+}
+
+.intro .intro2 {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.register-zone {
+   margin: auto;
+   border-top: 1px solid #1c1e21;
+   padding: 20px;
+}
+.form-zone {
+    padding: 16px 0px;
+}
+
+hr {
+    width: 100%;
+    outline: none;
+}
+
+ input {
+    background: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 16px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+#mail-sdt {
+    width: 100%;
+}
+
+#new-password {
+    width: 100%;
+}
+
+#name {
+    float: right;
+    width: 48.5%;
+}
+
+#family-name {
+    float: left;
+    width: 48.5%;
+}
+
+.birthday-line {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    border-radius: 4px;
+    color: #1c1e21;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 20px;
+    width: 116px;
+}
+
+.gender {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.info-2 {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.gender-wrapper  {
+    border: 1px solid #ccd0d5;
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    font-weight: normal;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.radio-input {
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.label-gender {
+    width: 100%;
+}
+
+.text {
+    color: #777;
+    font-size: 11px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.button-register {
+display: flex;
+justify-content: center ;
+}
+
+.button-register button {
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
