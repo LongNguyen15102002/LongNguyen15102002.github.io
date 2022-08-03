@@ -80,20 +80,20 @@ public class Main2 {
     }
 
     public static void main(String[] args) {
-        int mehtodVar = 10;
-        for (int i = 0; i < 10; i++) {
-            // System.out.println("var: " + var);
-            int var = 3;
-            System.out.println("total: " + (var + i));
-            System.out.println("methodVar is inside block: " + mehtodVar);
-        }
-        // System.out.println("var is: " + var);
-        System.out.println("methodVar is outside block: " + mehtodVar);
+        // int mehtodVar = 10;
+        // for (int i = 0; i < 10; i++) {
+        //     // System.out.println("var: " + var);
+        //     int var = 3;
+        //     System.out.println("total: " + (var + i));
+        //     System.out.println("methodVar is inside block: " + mehtodVar);
+        // }
+        // // System.out.println("var is: " + var);
+        // System.out.println("methodVar is outside block: " + mehtodVar);
 
-        // initScanner();
-        // ex1();
-        // ex2();
-        // ex3();
-        // closeScanner();
+        initScanner();
+        ex1();
+        ex2();
+        ex3();
+        closeScanner();
     }
 }
