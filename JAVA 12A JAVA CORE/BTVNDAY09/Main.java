@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Nhap so tien muon nap: ");
         double recharge = scanner.nextDouble();
         System.out.println("Nhap email moi: ");
-        String newEmail = scanner.nextLine();
+        String newEmail = scanner.next();
         account.setName(name);
         account.setAccountNumber(accountNumber);
         account.setEmail(newEmail);
