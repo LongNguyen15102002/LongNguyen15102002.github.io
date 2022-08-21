@@ -1,6 +1,5 @@
 package JAVACOREDAY05;
 
-import java.io.Console;
 import java.util.Scanner;
 
 public class Lab5 {

@@ -1,4 +1,4 @@
-package JAVACOREDAY10.TechMaster;
+package BTVNDAY10.TechMaster;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,7 +32,6 @@ public class Main {
         System.out.println(manager);
         System.out.println();
 
-        //Tạo Iterator để duyệt arraylist
         Iterator<Student> it = students.iterator();
         while (it.hasNext()) {
             Student i = it.next();
@@ -40,6 +39,7 @@ public class Main {
                 it.remove();
             }
         }
+
         System.out.println("Danh sach lop sau khi xoa ban khong di hoc la: ");
         System.out.println();
         System.out.println(students);

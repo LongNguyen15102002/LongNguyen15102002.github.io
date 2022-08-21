@@ -1,5 +1,3 @@
-package JAVACOREDAY10.TechMaster;
-
 public class Teacher {
     private String teacherName;
     private int teacherYearOfBirth;

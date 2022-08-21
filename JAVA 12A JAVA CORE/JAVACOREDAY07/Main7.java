@@ -7,8 +7,6 @@ public class Main7 {
         dog.speak();
         dog.move();
 
-        Sedan sedan = new Sedan("Toyota", "red");
-
         Car car = new Sedan("Honda", "white");
         car.horn(true);
 

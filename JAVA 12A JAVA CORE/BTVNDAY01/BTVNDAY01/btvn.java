@@ -1,3 +1,5 @@
+package BTVNDAY01;
+
 public class btvn {
     public static void main(String[] args) {
         /* BT1 */

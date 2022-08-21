@@ -1,6 +1,5 @@
 package BTVNDAY04;
 
-import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -44,25 +43,26 @@ public class btvn {
     }
 
     static void bai2() {
-        // Đếm số từ trong chuỗi , đếm và in ra index của 1 kí tự bất kì trong chuỗi
-        // vừa nhập
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("nhap 1 chuoi bat ki: ");
-        String str = scanner.nextLine();
-        String[] splitstr = str.split(" ");
-        System.out.println("so tu co trong chuoi la: " + splitstr.length);
-        System.out.print("nhap 1 ki tu bat ki: ");
-        char character;
-        character = scanner.next().charAt(0);
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == character) {
-                System.out.println("Vi tri cua ki tu " + character + " la: " + i);
-                count++;
+        try (// Đếm số từ trong chuỗi , đếm và in ra index của 1 kí tự bất kì trong chuỗi
+                // vừa nhập
+        Scanner scanner = new Scanner(System.in)) {
+            System.out.println("nhap 1 chuoi bat ki: ");
+            String str = scanner.nextLine();
+            String[] splitstr = str.split(" ");
+            System.out.println("so tu co trong chuoi la: " + splitstr.length);
+            System.out.print("nhap 1 ki tu bat ki: ");
+            char character;
+            character = scanner.next().charAt(0);
+            int count = 0;
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == character) {
+                    System.out.println("Vi tri cua ki tu " + character + " la: " + i);
+                    count++;
+                }
             }
+            System.out.println("So lan xuat hien cua ki tu " + character + " la: " +
+                    count);
         }
-        System.out.println("So lan xuat hien cua ki tu " + character + " la: " +
-                count);
     }
 
     static void bai3() {
@@ -87,12 +87,12 @@ public class btvn {
         // nếu số nguyên tố nhỏ hơn giá trị m thì tăng biến đếm và in ra giá trị của các
         // số đó
         int n, m;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap vao n so nguyen to dau tien: ");
-        n = scanner.nextInt();
-        System.out.print("nhap vao gia tri m: ");
-        m = scanner.nextInt();
-
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("nhap vao n so nguyen to dau tien: ");
+            n = scanner.nextInt();
+            System.out.print("nhap vao gia tri m: ");
+            m = scanner.nextInt();
+        }
         int primeCount = 0; // Số lượng số nguyên tố đã tìm ra sau mỗi vòng lặp
         int num = 2; // Số nguyên tố luôn bắt đầu từ 2
 
@@ -118,106 +118,108 @@ public class btvn {
     static void bai5() {
         // Tạo mảng 2 chiều A với số dòng và số cột nhập vào từ bàn phím
         int NumOfRows, NumOfColumns;
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("nhap so dong cua mang A: ");
+            NumOfRows = scanner.nextInt();
+            System.out.println("nhap so cot cua mang A: ");
+            NumOfColumns = scanner.nextInt();
 
-        System.out.println("nhap so dong cua mang A: ");
-        NumOfRows = scanner.nextInt();
-        System.out.println("nhap so cot cua mang A: ");
-        NumOfColumns = scanner.nextInt();
+            // Khai báo và cấp phát bộ nhớ cho mảng A
+            int[][] twoDimensionArray_A = new int[NumOfRows][NumOfColumns];
 
-        // Khai báo và cấp phát bộ nhớ cho mảng A
-        int[][] twoDimensionArray_A = new int[NumOfRows][NumOfColumns];
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    System.out.print("nhap phan tu thu [" + i + ", " + j + "] cua mang A: ");
+                    twoDimensionArray_A[i][j] = scanner.nextInt();
+                }
+            }
 
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                System.out.print("nhap phan tu thu [" + i + ", " + j + "] cua mang A: ");
-                twoDimensionArray_A[i][j] = scanner.nextInt();
+            // In thông tin mảng A ra màn hình
+            System.out.println("mang A vua nhap la: ");
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    System.out.print(twoDimensionArray_A[i][j] + "\t");
+                }
+                System.out.println("\n");
+            }
+
+            // Tạo mảng 2 chiều B với số dòng và số cột nhập vào từ bàn phím
+
+            System.out.println("nhap so dong cua mang B: ");
+            NumOfRows = scanner.nextInt();
+            System.out.println("nhap so cot cua mang B: ");
+            NumOfColumns = scanner.nextInt();
+
+            // Khai báo và cấp phát bộ nhớ cho mảng B
+            int[][] twoDimensionArray_B = new int[NumOfRows][NumOfColumns];
+
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    System.out.print("nhap phan tu thu [" + i + ", " + j + "] cua mang B: ");
+                    twoDimensionArray_B[i][j] = scanner.nextInt();
+                }
+            }
+
+            // In thông tin mảng B ra màn hình
+            System.out.println("mang B vua nhap la: ");
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    System.out.print(twoDimensionArray_B[i][j] + "\t");
+                }
+                System.out.println("\n");
+            }
+
+            // Tính ma trận tổng C là tổng của 2 ma trận A và B
+            int twoDimensionArray_C[][] = new int[NumOfRows][NumOfColumns];
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    twoDimensionArray_C[i][j] = twoDimensionArray_A[i][j] + twoDimensionArray_B[i][j];
+                }
+            }
+
+            // hiển thị ma trận tổng C
+            System.out.println("Ma tran tong C la:");
+            for (int i = 0; i < NumOfRows; i++) {
+                for (int j = 0; j < NumOfColumns; j++) {
+                    System.out.print(twoDimensionArray_C[i][j] + "\t");
+                }
+                System.out.println("\n");
             }
         }
 
-        // In thông tin mảng A ra màn hình
-        System.out.println("mang A vua nhap la: ");
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                System.out.print(twoDimensionArray_A[i][j] + "\t");
-            }
-            System.out.println("\n");
-        }
-
-        // Tạo mảng 2 chiều B với số dòng và số cột nhập vào từ bàn phím
-
-        System.out.println("nhap so dong cua mang B: ");
-        NumOfRows = scanner.nextInt();
-        System.out.println("nhap so cot cua mang B: ");
-        NumOfColumns = scanner.nextInt();
-
-        // Khai báo và cấp phát bộ nhớ cho mảng B
-        int[][] twoDimensionArray_B = new int[NumOfRows][NumOfColumns];
-
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                System.out.print("nhap phan tu thu [" + i + ", " + j + "] cua mang B: ");
-                twoDimensionArray_B[i][j] = scanner.nextInt();
-            }
-        }
-
-        // In thông tin mảng B ra màn hình
-        System.out.println("mang B vua nhap la: ");
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                System.out.print(twoDimensionArray_B[i][j] + "\t");
-            }
-            System.out.println("\n");
-        }
-
-        // Tính ma trận tổng C là tổng của 2 ma trận A và B
-        int twoDimensionArray_C[][] = new int[NumOfRows][NumOfColumns];
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                twoDimensionArray_C[i][j] = twoDimensionArray_A[i][j] + twoDimensionArray_B[i][j];
-            }
-        }
-
-        // hiển thị ma trận tổng C
-        System.out.println("Ma tran tong C la:");
-        for (int i = 0; i < NumOfRows; i++) {
-            for (int j = 0; j < NumOfColumns; j++) {
-                System.out.print(twoDimensionArray_C[i][j] + "\t");
-            }
-            System.out.println("\n");
-        }
+        
 
         // hiển thị các phần tử nằm trên đường chéo chính của 1 ma trận vuông bất kì
 
         int r; // bậc r của ma trận vuông p
-        Scanner scanner2 = new Scanner(System.in);
+        try (Scanner scanner2 = new Scanner(System.in)) {
+            System.out.println("nhap vao bac r cua ma tran vuong p: ");
+            r = scanner2.nextInt();
 
-        System.out.println("nhap vao bac r cua ma tran vuong p: ");
-        r = scanner2.nextInt();
+            int p[][] = new int[r][r];
 
-        int p[][] = new int[r][r];
-
-        System.out.println("nhap cac phan tu cho ma tran vuong p: ");
-        for (int m = 0; m < r; m++) {
-            for (int n = 0; n < r; n++) {
-                System.out.print("p[" + m + "][" + n + "] = ");
-                p[m][n] = scanner2.nextInt();
+            System.out.println("nhap cac phan tu cho ma tran vuong p: ");
+            for (int m = 0; m < r; m++) {
+                for (int n = 0; n < r; n++) {
+                    System.out.print("p[" + m + "][" + n + "] = ");
+                    p[m][n] = scanner2.nextInt();
+                }
             }
-        }
 
-        System.out.println("ma tran vuong p vua nhap la: ");
-        for (int m = 0; m < r; m++) {
-            for (int n = 0; n < r; n++) {
-                System.out.print(p[m][n] + "\t");
+            System.out.println("ma tran vuong p vua nhap la: ");
+            for (int m = 0; m < r; m++) {
+                for (int n = 0; n < r; n++) {
+                    System.out.print(p[m][n] + "\t");
+                }
+                System.out.println("\n");
             }
-            System.out.println("\n");
-        }
 
-        for (int m = 0; m < r; m++) {
-            for (int n = 0; n < r; n++) {
-                // kiểm tra nếu m = n thì mới in ra màn hình
-                if (m == n) {
-                    System.out.println("phan tu nam trong duong cheo chinh cua ma tran vuong p la: " + p[m][n]);
+            for (int m = 0; m < r; m++) {
+                for (int n = 0; n < r; n++) {
+                    // kiểm tra nếu m = n thì mới in ra màn hình
+                    if (m == n) {
+                        System.out.println("phan tu nam trong duong cheo chinh cua ma tran vuong p la: " + p[m][n]);
+                    }
                 }
             }
         }
@@ -225,25 +227,26 @@ public class btvn {
 
     static void bai6() {
         boolean EmailCheck, PhoneCheck;
-        Scanner scanner = new Scanner(System.in);
-        do {
-            String EmailPattern = "[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{3,15}([.][a-zA-Z]{2,5}){1,2}";
-            System.out.print("Input your email(email@address.com): ");
-            String inputEmail = scanner.next();
-            EmailCheck = inputEmail.matches(EmailPattern);
-            if (!EmailCheck) {
-                System.out.println("Invalid email");}
-        } while (!EmailCheck);
-        System.out.println("Valid email");
-        do {
-            String PhonePattern = "[0-9]{9,11}";
-            System.out.print("Input your phone number (9-11 digits): ");
-            String inputPhoneNumber = scanner.next();
-            PhoneCheck = inputPhoneNumber.matches(PhonePattern);
-            if (!PhoneCheck) {
-                System.out.println("Invalid phone number");
-            }
-        } while (!PhoneCheck);
+        try (Scanner scanner = new Scanner(System.in)) {
+            do {
+                String EmailPattern = "[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{3,15}([.][a-zA-Z]{2,5}){1,2}";
+                System.out.print("Input your email(email@address.com): ");
+                String inputEmail = scanner.next();
+                EmailCheck = inputEmail.matches(EmailPattern);
+                if (!EmailCheck) {
+                    System.out.println("Invalid email");}
+            } while (!EmailCheck);
+            System.out.println("Valid email");
+            do {
+                String PhonePattern = "[0-9]{9,11}";
+                System.out.print("Input your phone number (9-11 digits): ");
+                String inputPhoneNumber = scanner.next();
+                PhoneCheck = inputPhoneNumber.matches(PhonePattern);
+                if (!PhoneCheck) {
+                    System.out.println("Invalid phone number");
+                }
+            } while (!PhoneCheck);
+        }
         System.out.println("Valid phone number");
     }
 

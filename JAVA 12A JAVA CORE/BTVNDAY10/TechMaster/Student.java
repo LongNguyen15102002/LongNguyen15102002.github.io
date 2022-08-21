@@ -1,4 +1,4 @@
-package JAVACOREDAY10.TechMaster;
+package BTVNDAY10.TechMaster;
 
 public class Student {
     private String studentID;

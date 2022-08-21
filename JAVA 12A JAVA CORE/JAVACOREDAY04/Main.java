@@ -26,8 +26,6 @@ public class Main {
                 System.out.println(twoDimensionArray[i][j]);
             }
         }
-        int[][][] threeDimensions = new int[2][3][4];
-        
         for (int index = 0; index < text.length; index++) {
             System.out.println("for:" + text[index]);
             if (text[index] == null) {

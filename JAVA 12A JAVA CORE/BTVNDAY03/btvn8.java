@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class btvn8 {
     public static void main(String args[]){
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("nhap vao 1 xau bat ki: ");
-            String text = scanner.nextLine();
-            System.out.println(isUnique(text));
+            try (Scanner scanner = new Scanner(System.in)) {
+                System.out.println("nhap vao 1 xau bat ki: ");
+                String text = scanner.nextLine();
+                System.out.println(isUnique(text));
+            }
     }
     public static boolean isUnique(String text) {
         for (int i = 0; i < text.length() - 1; i++) {

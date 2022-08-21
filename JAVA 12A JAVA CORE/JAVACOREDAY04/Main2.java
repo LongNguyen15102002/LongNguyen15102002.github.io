@@ -18,9 +18,10 @@ public class Main2 {
 
     static void ex1() {
         int n, sum = 0;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap vao mot so nguyen duong: ");
-        n = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("nhap vao mot so nguyen duong: ");
+            n = scanner.nextInt();
+        }
         // scanner.close();
         if (n <= 0) {
             System.out.println("khong hop le");
@@ -34,9 +35,10 @@ public class Main2 {
 
     static void ex2() {
         int n = 0;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap vao n so nguyen to dau tien: ");
-        n = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("nhap vao n so nguyen to dau tien: ");
+            n = scanner.nextInt();
+        }
         // scanner.close();
         int primeCount = 0; // Số lượng số nguyên tố đã tìm ra sau mỗi vòng lặp
         int sumOfPrime = 0;
@@ -68,7 +70,7 @@ public class Main2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap vao so nguyen duong bat ki: ");
         positiveNumber = scanner.nextInt();
-        // scanner.close();
+        scanner.close();
         while (positiveNumber > 0) // nhập số nguyên dương đến khi nào không còn chữ số để chia thì thôi
         {
             int lastDigit = positiveNumber % 10; // lấy ra chữ số cuối cùng bằng cách chia số nguyên dương lấy phần dư
