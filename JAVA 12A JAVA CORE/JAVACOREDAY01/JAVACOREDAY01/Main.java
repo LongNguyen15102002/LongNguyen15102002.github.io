@@ -1,4 +1,4 @@
-package JAVACOREDAY01;
+package JAVACOREDAY01.JAVACOREDAY01;
 
 import java.util.Scanner;
 

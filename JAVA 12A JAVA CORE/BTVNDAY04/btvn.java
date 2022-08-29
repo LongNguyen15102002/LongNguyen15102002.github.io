@@ -229,7 +229,7 @@ public class btvn {
         boolean EmailCheck, PhoneCheck;
         try (Scanner scanner = new Scanner(System.in)) {
             do {
-                String EmailPattern = "[a-zA-Z0-9]{3,15}@[a-zA-Z0-9]{3,15}([.][a-zA-Z]{2,5}){1,2}";
+                String EmailPattern = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
                 System.out.print("Input your email(email@address.com): ");
                 String inputEmail = scanner.next();
                 EmailCheck = inputEmail.matches(EmailPattern);

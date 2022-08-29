@@ -1,20 +1,21 @@
 package BTVNDAY01;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
-
+ 
 public class Main {
-    public static void main(String[] args) {
-
+    public static void main(String args[]) {
+        // init map
         Map<Integer, String> map = new HashMap<Integer, String>();
-        map.put(100, "A");
+        map.put(101, "A");
         map.put(101, "B");
         map.put(102, "C");
-
-        for (Map.Entry<Integer, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
+        // show map
+        Set<Integer> set = map.keySet();
+        for (Integer key : set) {
+            System.out.println(key + " " + map.get(key));
         }
-
     }
 }
