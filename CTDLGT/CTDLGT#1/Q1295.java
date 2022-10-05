@@ -1,6 +1,6 @@
 public class Q1295 {
     public static void main(String[] args) {
-        int[] nums = {1,2,34,13,123};
+     
     }
 
     public int findNumbers(int[] nums) {

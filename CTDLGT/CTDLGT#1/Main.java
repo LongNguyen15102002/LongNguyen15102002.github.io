@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         int[] array1 = { 5, 7, 1, 9, 3, 2 };
