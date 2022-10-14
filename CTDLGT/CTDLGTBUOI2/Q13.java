@@ -48,6 +48,6 @@ public class Q13 {
                     arr[i] = 1000;
                     break;
             }
-        }return 
+        }return arr;
     } 
 }
