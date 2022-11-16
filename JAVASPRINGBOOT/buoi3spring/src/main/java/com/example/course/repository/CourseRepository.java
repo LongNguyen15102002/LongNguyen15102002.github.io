@@ -1,5 +1,6 @@
 package com.example.course.repository;
 
+import com.example.course.exception.NotFoundException;
 import com.example.course.model.Course;
 import com.example.course.model.User;
 import com.github.javafaker.Faker;
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 @Repository
@@ -31,11 +33,11 @@ public class CourseRepository {
 
         for (int i = 1; i < 21; i++) {
             // Random topic
-            List<String> rdTopcis = new ArrayList<>();
+            List<String> rdTopics = new ArrayList<>();
             for (int j = 0; j < 3; j++) {
                 String rdTopic = topics.get(rd.nextInt(topics.size()));
-                if(!rdTopcis.contains(rdTopic)) {
-                    rdTopcis.add(rdTopic);
+                if(!rdTopics.contains(rdTopic)) {
+                    rdTopics.add(rdTopic);
                 }
             }
 
@@ -48,7 +50,7 @@ public class CourseRepository {
                     faker.funnyName().name(),
                     faker.lorem().sentence(20),
                     rd.nextInt(2) == 1 ? "online" : "onlab",
-                    rdTopcis,
+                    rdTopics,
                     faker.avatar().image(),
                     rdUser.getId()
             );
@@ -59,5 +61,22 @@ public class CourseRepository {
 
     public List<Course> findAll() {
         return courses;
+    }
+
+    public Course save(Course course) {
+        int id = courses.get(courses.size() - 1).getId() + 1;
+        course.setId(id);
+        courses.add(course);
+        return course;
+    }
+
+    public void deleteById(Integer id) {
+        Course course = findById(id).orElseThrow(() -> new NotFoundException("Id is not existed " + id));
+        courses.remove(course);
+    }
+
+    public Optional<Course> findById(Integer id) {
+        Optional<Course> course = courses.stream().filter(c -> c.getId() == id).findFirst();
+        return course;
     }
 }

@@ -1,24 +1,21 @@
-package com.example.course.model;
+package com.example.course.dto;
 
+import com.example.course.model.User;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.List;
-
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Course {
+public class CourseDto {
     private Integer id;
-    @NotBlank
     private String name;
-    @NotBlank
-    @Size(min = 50, message = "Độ dài kí tự > 50")
     private String description;
     private String type;
     private List<String> topics;
     private String thumbnail;
-    private Integer userId;
-
+    private User userDto;
 }

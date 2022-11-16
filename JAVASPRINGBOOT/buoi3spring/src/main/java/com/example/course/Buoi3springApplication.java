@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Bean;
 public class Buoi3springApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Buoi3springApplication.class, args);
+        SpringApplication.run(com.example.course.Buoi3springApplication.class, args);
     }
 
-    @Bean
-    public Faker faker() {
+    @Bean()
+    public Faker faker () {
         return new Faker();
     }
 }

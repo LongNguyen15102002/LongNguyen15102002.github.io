@@ -1,16 +1,20 @@
 package com.example.course.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
-@NoArgsConstructor
+import javax.validation.constraints.NotBlank;
+
+@Data
 @AllArgsConstructor
-@ToString
+@NoArgsConstructor
 public class User {
-    private int id;
+
+    private Integer id;
+    @NotBlank
     private String name;
     private String email;
     private String phone;
-    private String avatar;
+    private String avater;
 }

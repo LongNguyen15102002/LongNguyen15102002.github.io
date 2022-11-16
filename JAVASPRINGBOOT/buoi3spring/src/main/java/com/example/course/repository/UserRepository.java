@@ -2,11 +2,11 @@ package com.example.course.repository;
 
 import com.example.course.model.User;
 import com.github.javafaker.Faker;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class UserRepository {
@@ -33,5 +33,10 @@ public class UserRepository {
 
     public List<User> findAll() {
         return users;
+    }
+
+    public Optional<User> findById(Integer userId) {
+        Optional<User> user = users.stream().filter(c -> c.getId() == userId).findFirst();
+        return user;
     }
 }
